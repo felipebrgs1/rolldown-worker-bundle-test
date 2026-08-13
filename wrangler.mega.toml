@@ -1,0 +1,16 @@
+# Deploy PADRAO do worker MEGA: wrangler empacota src/mega.ts com esbuild interno
+name = "rolldown-mega"
+main = "src/mega.ts"
+compatibility_date = "2025-08-13"
+minify = true
+account_id = "78fedbeba68de80a823e65652da5f2c5"
+# jimp (pngjs/gifwrap) usa require("fs")/require("util") — so funciona
+# com os builtins do Node no runtime
+nodejs_compat = true
+
+[observability]
+enabled = true
+
+[vars]
+GREETING = "Hello"
+APP_NAME = "rolldown-mega"

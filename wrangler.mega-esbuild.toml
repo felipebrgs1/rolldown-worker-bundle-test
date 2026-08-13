@@ -1,0 +1,15 @@
+# Baseline esbuild: bundle feito pelo nosso scripts/build.mjs (mesmas condicoes
+# do wrangler) — o wrangler padrao NAO empacota src/mega.ts (pngjs/gifwrap usam
+# require("fs") nu em CJS, que o esbuild/wrangler nao stuba)
+name = "rolldown-mega-esbuild"
+main = "dist/esbuild/mega.js"
+no_bundle = true
+compatibility_date = "2025-08-13"
+account_id = "78fedbeba68de80a823e65652da5f2c5"
+
+[observability]
+enabled = true
+
+[vars]
+GREETING = "Hello"
+APP_NAME = "rolldown-mega-esbuild"

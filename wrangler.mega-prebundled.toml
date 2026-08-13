@@ -1,0 +1,13 @@
+# Deploy PRE-BUNDLED do worker MEGA: bundle rolldown sem re-empacotar
+name = "rolldown-mega-prebundled"
+main = "dist/rolldown/mega.js"
+no_bundle = true
+compatibility_date = "2025-08-13"
+account_id = "78fedbeba68de80a823e65652da5f2c5"
+
+[observability]
+enabled = true
+
+[vars]
+GREETING = "Hello"
+APP_NAME = "rolldown-mega-prebundled"
