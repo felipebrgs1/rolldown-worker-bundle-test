@@ -1,0 +1,38 @@
+{
+  "name": "rolldown-worker-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bundle": "node scripts/build.mjs",
+    "compare": "node scripts/compare.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prebundled": "wrangler deploy -c wrangler.prebundled.toml",
+    "deploy:heavy": "wrangler deploy -c wrangler.heavy.toml",
+    "deploy:heavy:prebundled": "wrangler deploy -c wrangler.heavy-prebundled.toml",
+    "coldstart": "node scripts/coldstart.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1110.0",
+    "axios": "^1.19.0",
+    "date-fns": "^4.4.0",
+    "i18next": "^26.3.6",
+    "lodash-es": "^4.18.1",
+    "moment": "^2.30.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260813.1",
+    "@types/lodash-es": "^4.17.12",
+    "esbuild": "^0.28.2",
+    "rolldown": "^1.2.4",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.123.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260811.1": true
+  }
+}

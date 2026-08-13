@@ -1,0 +1,14 @@
+# Deploy PRE-BUNDLED: sobe dist/rolldown/worker.js sem re-empacotar
+# no_bundle = true pula o esbuild interno do wrangler
+name = "rolldown-test-prebundled"
+main = "dist/rolldown/worker.js"
+no_bundle = true
+compatibility_date = "2025-08-13"
+account_id = "78fedbeba68de80a823e65652da5f2c5"
+
+[observability]
+enabled = true
+
+[vars]
+GREETING = "Hello"
+APP_NAME = "rolldown-test-prebundled"

@@ -1,0 +1,13 @@
+# Deploy PADRAO: wrangler empacota src/index.ts com esbuild interno
+name = "rolldown-test"
+main = "src/index.ts"
+compatibility_date = "2025-08-13"
+minify = true
+account_id = "78fedbeba68de80a823e65652da5f2c5"
+
+[observability]
+enabled = true
+
+[vars]
+GREETING = "Hello"
+APP_NAME = "rolldown-test"
